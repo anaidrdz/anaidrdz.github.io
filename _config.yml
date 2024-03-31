@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Anaid Rodriguez 
 description: CS-499 Capstone ePortfolio
+layout: layout.html
