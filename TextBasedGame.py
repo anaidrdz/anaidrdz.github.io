@@ -1,4 +1,12 @@
-# Anaid Rodriguez
+"""
+__author__ = "Anaid Rodriguez"
+__file__ = "Text Based Game"
+__institution__ = "Southern New Hampshire University"
+__course__ = "CS-499 Computer Science Capstone"
+__assignment__ = "3-2 Milestone Two: Enhancement One: Software Design and Engineering"
+__date__ = 03/24/2024
+__version__ = "2.0"
+"""
 
 def instructions():             # instructions include all possible commands to type in
     print('''Collect all the fingerprints as evidence and try not to end up in a room with the killer.
