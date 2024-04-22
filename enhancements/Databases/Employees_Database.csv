@@ -1,0 +1,7 @@
+Employee_ID,First_Name,Last_Name,Department_ID,Classification,Status,Salary
+100,John,Smith,1,Exempt,Full-Time,90000.00
+101,Mary,Jones,2,Non-Exempt,Part-Time,35000.00
+103,Gwen,Johnson,4,Exempt,Full-Time,40000.00
+104,Mike,Jones,4,Non-Exempt,Full-Time,60000.00
+105,Anaid,Rodriguez,3,Non-Exempt,Full-Time,85000.00
+106,Anakin,Skywalker,4,Non-Exempt,Full-Time,66000.00
