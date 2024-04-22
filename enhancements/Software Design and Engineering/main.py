@@ -9,7 +9,7 @@ __version__ = "2.0"
 """
 
 import time
-
+# as part of the enhancement, almost all functionality is written outside of the main function, starting with the dictionaries
 # nested dictionary that links all the rooms together along with all the evidence for the EASY difficulty level
 rooms_easy_mode = {
     "HALL": {"name": "HALL", "go north": "OFFICE", "go west": "CONSERVATORY", "go east": "GUEST RESTROOM", "evidence": "none"},
@@ -23,6 +23,7 @@ rooms_easy_mode = {
     "OFFICE": {"name": "The OFFICE", "go south": "HALL", "go north": "STORAGE ROOM", "evidence": "Forced entry"}
 }
 
+# as part of the enhancement, a hard mode difficulty level is added to the game
 # nested dictionary that holds and links all the rooms and the evidence for the HARD difficulty level
 rooms_hard_mode = {
     "HALL": {"name": "HALL", "go north": "CONSERVATORY", "evidence": "none"},
@@ -45,6 +46,7 @@ rooms_hard_mode = {
     "STORAGE ROOM": {"name": "STORAGE ROOM", "go east": "SURVEILLANCE ROOM", "go south": "Room 3", "evidence": "Latex gloves"}
 }
 
+# as part of the enhancement, I edited the text in the game to improve readibility and provide a better explanation about the purpose/goal of the game
 
 # explains the background story to the player
 def game_story():
@@ -92,7 +94,7 @@ def accepted_commands(command):
     else:
         return False
 
-
+# as part of the enhancement, I made a function to check for valid moves rather than writing long and nested conditional statements in main
 # function that checks if there is a door in the given direction
 def accepted_directions(location, direction):
     if direction in location:
@@ -100,7 +102,7 @@ def accepted_directions(location, direction):
     else:
         return False
 
-
+# as part of the enhancement, the functionality to gather evidence is written outside of main to produce reusable code
 # function to check for and gather evidence from a room
 def gather_evidence(location_item, evidence):
 
@@ -215,7 +217,7 @@ def difficulty_level():
             print("Please select a difficulty. Easy (E) or Hard (H)")  # loop will continue if there is no valid input
             difficulty = input(">> ").casefold()
 
-
+# as part of the enhancement, the main function is greatly condensed and opts for calling functions rather than writing the whole program inside main
 # main function
 def main():
 
