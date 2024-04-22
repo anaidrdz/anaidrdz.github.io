@@ -1,3 +1,13 @@
+"""
+__author__ = "Anaid Rodriguez"
+__file__ = "Text Based Game"
+__institution__ = "Southern New Hampshire University"
+__course__ = "CS-499 Computer Science Capstone"
+__assignment__ = "3-2 Milestone Two: Enhancement One: Software Design and Engineering"
+__date__ = 03/24/2024
+__version__ = "2.0"
+"""
+
 import time
 
 # nested dictionary that links all the rooms together along with all the evidence for the EASY difficulty level
